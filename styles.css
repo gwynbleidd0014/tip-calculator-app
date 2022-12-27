@@ -1,0 +1,144 @@
+:root {
+  /* COLORS */
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-graysh-cyan: hsl(189, 41%, 97%);
+  --white: white;
+  --bs: rgba(79, 166, 175, 0.200735);
+  --inp-bg: hsla(185, 38%, 97%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background: var(--light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-grayish-cyan);
+  font-weight: 700;
+}
+
+input,
+.tip {
+  font-size: 1.5rem;
+}
+
+.logo {
+  margin: 3.15em 0 2.5em 0;
+}
+
+.main {
+  background: var(--white);
+  width: 375px;
+  box-shadow: 0 32px 43px var(--bs);
+  border-radius: 25px 25px 0 0;
+  height: 100vh;
+  padding: 2em;
+}
+
+/* INPUT GROUP STYLES */
+
+.inp-group > label {
+  margin-bottom: 0.315em;
+}
+
+.inp-group {
+  margin-bottom: 2em;
+}
+.input {
+  height: 48px;
+  border-radius: 5px;
+  padding: 0.95em 1.25em;
+  display: flex;
+  align-items: center;
+  width: 311px;
+  justify-content: space-between;
+  background: var(--inp-bg);
+}
+
+.input > img {
+  width: 9.84px;
+  height: 15.46px;
+}
+
+.inp-inner {
+  background: var(--inp-bg);
+  text-align: right;
+  border: none;
+  width: 100%;
+  height: 36px;
+  color: var(--very-dark-cyan);
+  font-family: inherit;
+}
+
+input:focus,
+input:hover {
+  outline: none;
+}
+
+/* TIPS CONTAINER STYLES */
+.tips-label {
+  margin-bottom: 1em;
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.tips {
+  height: 216px;
+  margin-bottom: 2em;
+}
+
+.tips-container {
+  height: 48px;
+  background: var(--inp-bg);
+}
+
+.tip {
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  border-radius: 5px;
+  height: 48px;
+}
+
+.grid-inp {
+  color: var(--very-dark-cyan);
+  width: 100%;
+  background: var(--inp-bg);
+  padding: 0.2em 0.82em;
+  border: none;
+  text-align: right;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.results {
+  background: var(--very-dark-cyan);
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.result {
+  display: flex;
+}
+
+.result > span {
+  display: block;
+}
