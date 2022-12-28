@@ -24,51 +24,64 @@
   </head>
   <body>
     <div class="logo"><img src="./images/logo.svg" /></div>
-    <main class="main">
-      <div class="inp-group">
-        <label for="bill">Bill</label>
-        <div class="input">
-          <img src="./images/icon-dollar.svg" /><input
-            id="bill"
-            type="text"
-            class="inp-inner"
-            placeholder="0"
-          />
+    <main class="main" id="main">
+      <div class="input-fields">
+        <div class="inp-group">
+          <label for="bill">Bill</label>
+          <div class="input">
+            <img src="./images/icon-dollar.svg" /><input
+              id="bill"
+              type="text"
+              class="inp-inner"
+              placeholder="0"
+            />
+          </div>
         </div>
-      </div>
-      <div class="tips">
-        <p class="tips-label">Select Tip %</p>
-        <div class="tips-container">
-          <div class="tip">5%</div>
-          <div class="tip">10%</div>
-          <div class="tip">15%</div>
-          <div class="tip">25%</div>
-          <div class="tip">50%</div>
-          <input type="text" class="grid-inp" placeholder="Costum" />
+
+        <div class="tips">
+          <p class="tips-label">Select Tip %</p>
+          <div class="tips-container">
+            <div class="tip">5%</div>
+            <div class="tip">10%</div>
+            <div class="tip">15%</div>
+            <div class="tip">25%</div>
+            <div class="tip">50%</div>
+            <input
+              type="text"
+              class="grid-inp"
+              placeholder="Costum"
+              id="costum-tip"
+            />
+          </div>
         </div>
-      </div>
-      <div class="inp-group">
-        <label for="number-of-people">Number of People</label>
-        <div class="input">
-          <img src="./images/icon-dollar.svg" /><input
-            id="number-of-people"
-            type="text"
-            class="inp-inner"
-            placeholder="0"
-          />
+        <div class="inp-group">
+          <div id="label-for-people">
+            <label for="number-of-people">Number of People</label>
+            <p class="error-msg">Can't be Zero</p>
+          </div>
+
+          <div class="input">
+            <img src="./images/icon-dollar.svg" /><input
+              id="number-of-people"
+              type="text"
+              class="inp-inner"
+              placeholder="0"
+            />
+          </div>
         </div>
       </div>
       <div class="results">
         <div class="result">
           <p class="tip-amount">Tip Amount<span>/ person</span></p>
-          <p class="tip-result">$0.0</p>
+          <p class="tip-result" id="tip-amount">$0.0</p>
         </div>
         <div class="result">
           <p class="total-amount">Total<span>/ person</span></p>
-          <p class="total-result">$0.0</p>
+          <p class="total-result" id="total-amount">$0.0</p>
         </div>
-        <button class="reset">RESET</button>
+        <button class="reset" id="reset">RESET</button>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
