@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://gwynbleidd0014.github.io/tip-calculator-app/)
+- Live Site URL: [Click](https://gwynbleidd0014.github.io/tip-calculator-app/)
 
 ### Built with
 
